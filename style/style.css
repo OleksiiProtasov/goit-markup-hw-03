@@ -6,11 +6,20 @@
     --footer-color:#2F303A;
     --connect-color:#757575;
     --primary-font-famaly:Roboto;
-
+    --primary-width:1270px;
 }
 
 
+.container{
+    display: block;
+    width: 1270px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    box-sizing: border-box;
 
+
+}
 
 /* header */
 
@@ -19,24 +28,36 @@ ul {list-style: none;}
 a {text-decoration: none;}
 
 
-
-.header{
-    display: inline;
-    height: 80px;
-    width: 1600px;
+.container nav{ 
+    display:flex;
+    justify-content:space-around;
+    
+    height: 78px;
+    
     background: var(--primary-white-color);
     font-family: var(--primary-font-famaly);
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
-    text-align: left;
+}
 
+.site-nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
 
+.site-nav:first-child{
+    margin-right: 93px;
+}
+
+.site-nav li{
+    margin-right: 50px;
 }
 
 .site-nav .link.current{
-    color: violet;
+    color: rgb(150, 130, 238);
 }
 
 .web {
@@ -74,14 +95,29 @@ a {text-decoration: none;}
     letter-spacing: 0.02em;
     text-align: left;
 }
-
 .link:active{
     color:rgb(255, 0, 0);
 }
-
 .link{
     color: var(--title-text-color);
-  }
+}
+
+
+/* box s style for tel and mail*/
+.conect{
+    display: flex;
+}
+
+.conect li{
+    margin-right: 50px;
+    margin-left: auto;
+    font-family: var(--primary-font-famaly);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+}
 
 .conect .link{
     color: var(--connect-color);
@@ -99,9 +135,10 @@ body {
 
 .hero {
     margin-top: 0px;
-    text-align: center;
+    
     height: 600px;
     background-color: #2F303A;
+    width: var(--primary-width);
 }
 
 .hero-title {
@@ -112,6 +149,7 @@ body {
     line-height: 60px;
     letter-spacing: 0.06em;
     text-align: center;
+    padding-top: 200px;
 
 
 }
@@ -120,21 +158,13 @@ body {
     margin-top: 30px;
     background-color: #2196F3;
     color: var(--primary-white-color);
-
-    position: absolute;
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
-    
     font-family: var(--primary-font-famaly);
     font-weight: bold;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    font-size: 16px;   
     letter-spacing: 0.06em;
-
+    border-radius: 4px;
 }
 
 
@@ -204,9 +234,15 @@ body {
 
     /* footer */
 
+
+
 body footer{
     background-color:var(--footer-color);
+    width:var(--primary-width);
+    box-sizing: border-box;
 }    
+
+
 
 .webfoot{
     font-family: Raleway;
@@ -214,7 +250,7 @@ body footer{
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0.03em;
-    
+    padding-left: 40px;
     color: var(--accent-color);
 }
 .studiofoot{   
@@ -235,6 +271,9 @@ body footer{
     letter-spacing: 0.03em;
     font-style: normal;
     color:var(--primary-white-color);
+
+    
+    padding-left: 40px;
 }
 
 .howconectfoot{
@@ -278,6 +317,10 @@ body footer{
     text-align: center;
 }
 
+
+.img-portfolio{
+    background-color: aqua;
+}
 
 /* our projects */
 
