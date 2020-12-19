@@ -6,20 +6,35 @@
     --footer-color:#2F303A;
     --connect-color:#757575;
     --primary-font-famaly:Roboto;
-    --primary-width:1170px;
+    --primary-width:1230px;
 }
 
 
 .container{
-    width: 1170px;
+    width: var(--primary-width);
+    padding-right:15px;
+    padding-left: 15px;
     
     
 }
 
+img {display: block;}
 ul {list-style: none;}
 ul {padding-inline-start:0}
 ul{margin:0}
 a {text-decoration: none;}
+
+
+/* визуально скрыть*/
+
+.visally-hidden{
+    position: absolute;
+    clip:rect(0 0 0 0);
+    width:1px;
+    height:1px;
+    margin:-1px;
+}
+
 
 
 /* header */
@@ -28,8 +43,7 @@ a {text-decoration: none;}
     display: flex;
    
     align-items: center;
-    /*padding-left: 215px;
-    padding-right:215px*/
+    
 }
 
 
@@ -252,6 +266,7 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     margin:0;
+    padding-top:94px;
     padding-bottom: 50px;
 }
 
@@ -259,8 +274,13 @@ body {
     display: flex;
 }
 
+.ourteam li{
+    background-color:var(--primary-white-color);
+}
 .ourteam{
     margin: 0;
+    padding-bottom:94px;
+
 }
 
 .ourteam .item:not(:last-child){
@@ -295,15 +315,29 @@ body {
 body footer{
     background-color:var(--footer-color);
     width:var(--primary-width);
-    display: box;
+    padding-right:15px;
+    padding-left: 15px;
 }    
 
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
 
-
-.webfoot{
+footer a:first-child{
     margin-top:60px;
     margin-bottom:20px;
+}
 
+footer .item:last-child{
+    margin-bottom: 60px;
+}
+
+footer .item{
+    margin-bottom: 9px;
+}
+
+.webfoot{
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -313,10 +347,6 @@ body footer{
     color: var(--accent-color);
 }
 .studiofoot{   
-    margin-top:60px;
-    margin-bottom:20px;
-
-
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -326,7 +356,9 @@ body footer{
     color: var(--primary-white-color);
 }
 
-.address{
+
+address{
+    margin-bottom: 9px;
     font-family: var(--primary-font-famaly);
     font-size: 14px;
     font-weight: 400;
@@ -353,6 +385,8 @@ body footer{
 
 
 
+
+
 /* стили portfolios.html*/
 
 
@@ -370,6 +404,13 @@ body footer{
     line-height: 26px;
     letter-spacing: 0.03em;
     text-align: center;
+    outline: transparent;
+    border: var(--accent-color);
+
+    border-radius: 4px;
+    
+    padding:6px 15px;
+    
 }
 
 
@@ -382,16 +423,63 @@ body footer{
     line-height: 26px;
     letter-spacing: 0.03em;
     text-align: center;
+    outline: transparent;
+    border:#F5F4FA;
+
+    border-radius: 4px;
+    padding:6px 15px;
 }
+
+.portfolio-btn{
+    display:flex;
+    justify-content: center;
+    margin-top:94px;
+    margin-bottom:34px;
+}
+
+.portfolio-btn .item:not(:last-child){
+    margin-right: 8px;
+}
+
+
+
+
 
 
 .img-portfolio{
-    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+    padding-bottom: 94px;
 }
+
+/* отступы в портфолио фото  */
+.img-portfolio .item{
+    margin-right: 30px;
+    margin-bottom:30px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+
+}
+.img-portfolio .item:nth-child(3n){
+    margin-right:0;
+}
+.img-portfolio .item:nth-last-child(-n+3){
+    margin-bottom:0;
+}
+
+
+
+
 
 /* our projects */
 
 .wedo{
+    margin-left:24px;
+
     font-family:var(--primary-font-famaly);
     font-size: 18px;
     font-style: normal;
@@ -403,6 +491,8 @@ body footer{
 }
 
 .aboutwedo{
+    margin-left:24px;
+
     font-family:var(--primary-font-famaly);
     font-size: 16px;
     font-style: normal;
