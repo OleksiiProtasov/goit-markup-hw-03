@@ -44,6 +44,7 @@ a {text-decoration: none;}
    
     align-items: center;
     
+    padding-bottom: 15px;
 }
 
 
@@ -122,6 +123,8 @@ a {text-decoration: none;}
 .conect{
     display: flex;
     margin-left:auto;
+
+    
     padding-inline-start: 0;
 }
 
