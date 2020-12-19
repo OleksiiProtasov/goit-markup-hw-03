@@ -176,8 +176,11 @@ body {
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 0.06em;
+
+    margin-top:0;
     margin-bottom:30px;
     padding-top:200px;
+    
 }
 
 .hero-btn {
