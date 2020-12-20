@@ -46,7 +46,9 @@ a {text-decoration: none;}
    
     align-items: center;
     
-    padding-bottom: 15px;
+
+    padding-top: 17px;
+    padding-bottom: 17px;
 
     border-bottom: 1px solid #ECECEC;
 }
@@ -57,8 +59,9 @@ a {text-decoration: none;}
     display: flex;
     margin-left: auto;
     align-items: center;
-    padding-inline-start: 0;
+   
     
+
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
