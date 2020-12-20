@@ -354,9 +354,9 @@ footer a:first-child{
     margin-bottom:20px;
 }
 
-/*footer .item:last-child{
-    margin-bottom: 60px;
-}*/
+footer .item:not(:last-child){
+    margin-bottom: 9px;
+}
 
 /*footer .item{
     margin-bottom: 9px;
