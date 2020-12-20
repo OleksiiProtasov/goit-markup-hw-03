@@ -6,7 +6,7 @@
     --footer-color:#2F303A;
     --connect-color:#757575;
     --primary-font-famaly:Roboto;
-    --primary-width:1230px;
+    --primary-width:1200px;
 }
 
 
@@ -14,7 +14,9 @@
     width: var(--primary-width);
     padding-right:15px;
     padding-left: 15px;
-    
+
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -45,6 +47,8 @@ a {text-decoration: none;}
     align-items: center;
     
     padding-bottom: 15px;
+
+    border-bottom: 1px solid #ECECEC;
 }
 
 
@@ -169,7 +173,8 @@ body {
     text-align: center;
     background-color: #2F303A;
     width: var(--primary-width);
-    
+    /*padding: 600px;*/
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -196,7 +201,7 @@ body {
     font-size: 16px;   
     letter-spacing: 0.06em;
     border-radius: 4px;
-    margin-bottom: 200px;
+    
 }
 
 
@@ -235,6 +240,9 @@ body {
 
 
 /*   ourwork     */
+
+
+
 
 .ourworkimg ul{
     
@@ -294,6 +302,11 @@ body {
     margin-right: 30px;
 }
 
+.ournamepadding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .ourname{
     font-family: var(--primary-font-famaly);
     font-size: 16px;
@@ -324,6 +337,11 @@ body footer{
     width:var(--primary-width);
     padding-right:15px;
     padding-left: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }    
 
 footer .container{
@@ -332,17 +350,17 @@ footer .container{
 }
 
 footer a:first-child{
-    margin-top:60px;
+    /*margin-top:60px;*/
     margin-bottom:20px;
 }
 
-footer .item:last-child{
+/*footer .item:last-child{
     margin-bottom: 60px;
-}
+}*/
 
-footer .item{
+/*footer .item{
     margin-bottom: 9px;
-}
+}*/
 
 .webfoot{
     font-family: Raleway;
@@ -366,6 +384,7 @@ footer .item{
 
 address{
     margin-bottom: 9px;
+
     font-family: var(--primary-font-famaly);
     font-size: 14px;
     font-weight: 400;
@@ -483,6 +502,10 @@ address{
 
 
 /* our projects */
+
+.portfolio-wedo{
+    margin:20px 24px;
+}
 
 .wedo{
     margin-left:24px;
