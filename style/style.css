@@ -189,14 +189,6 @@ body {
 
 /*   hero   */
 
-.overlay{
-    max-width:1600px;
-    margin: 0 auto;
-
-    background-position: center;
-    background-image: url(../photo/)s;
-}
-
 
 .hero-scn{
     padding-top: 200px;
