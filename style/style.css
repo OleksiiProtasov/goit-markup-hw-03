@@ -10,19 +10,6 @@
 }
 
 
-.container{
-    width: var(--primary-width);
-    padding-right:15px;
-    padding-left: 15px;
-
-    margin-left: auto;
-    margin-right: auto;
-    
-    /*padding-top: 94px;
-    padding-bottom: 94px;*/
-}
-
-
 
 img {display: block;}
 ul {list-style: none;}
@@ -36,7 +23,6 @@ a {text-decoration: none;}
 }*/
 
 /* визуально скрыть*/
-
 .visally-hidden{
     position: absolute;
     clip:rect(0 0 0 0);
@@ -44,6 +30,23 @@ a {text-decoration: none;}
     height:1px;
     margin:-1px;
 }
+
+
+body{margin: 0;}
+
+
+.container{
+    width: var(--primary-width);
+    padding-right:15px;
+    padding-left: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    /*padding-top: 94px;
+    padding-bottom: 94px;*/
+}
+
 
 
 
@@ -268,7 +271,7 @@ body {
 /*   ourwork     */
 
 .ourworking-scn{
-    padding-top: 94px;
+    
     padding-bottom: 94px;
 }
 
@@ -548,7 +551,7 @@ address{
 }
 
 .wedo{
-   
+    margin:0;
 
     font-family:var(--primary-font-famaly);
     font-size: 18px;
@@ -561,7 +564,7 @@ address{
 }
 
 .aboutwedo{
-    
+    margin:0;
 
     font-family:var(--primary-font-famaly);
     font-size: 16px;
